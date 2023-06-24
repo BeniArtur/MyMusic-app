@@ -4,13 +4,12 @@ import { useRouter } from "next/navigation";
 
 import { useUser } from "@/hooks/useUser";
 import Button from "@/components/Button";
-import useSubscribeModal from "@/hooks/useSubscribeModal";
+
 
 
 const AccountContent = () => {
     const router = useRouter();
-    const subscribeModal = useSubscribeModal();
-    const { isLoading, subscription, user } = useUser();
+    const { isLoading, user } = useUser();
   
     const [loading, setLoading] = useState(false);
     useEffect(() => {
@@ -21,7 +20,7 @@ const AccountContent = () => {
      
         
     return (  <div className="mb-7 px-6">
-    {!subscription && (
+    {  (
       <div className="flex flex-col gap-y-4">
       <p>Premium user  </p>
       <p

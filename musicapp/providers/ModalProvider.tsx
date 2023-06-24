@@ -1,6 +1,5 @@
 "use client";
 import AuthModal from "@/components/AuthModal";
-import SubscribeModal from "@/components/SubscribeModal";
 import UploadModal from "@/components/UploadModal";
 import { useUser } from "@/hooks/useUser";
 import { useEffect, useState } from "react";
